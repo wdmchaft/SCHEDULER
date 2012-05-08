@@ -39,23 +39,23 @@
 		227D827715594C9A00E3F33D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		227D827915594C9A00E3F33D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		227D827B15594C9A00E3F33D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		227D827F15594C9A00E3F33D /* SCHEDULER-Info.plist */ = {isa = PBXFileReference; path = "SCHEDULER-Info.plist"; sourceTree = "<group>"; };
+		227D827F15594C9A00E3F33D /* SCHEDULER-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCHEDULER-Info.plist"; sourceTree = "<group>"; };
 		227D828115594C9A00E3F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		227D828315594C9A00E3F33D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		227D828515594C9A00E3F33D /* SCHEDULER-Prefix.pch */ = {isa = PBXFileReference; path = "SCHEDULER-Prefix.pch"; sourceTree = "<group>"; };
-		227D828615594C9A00E3F33D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		227D828515594C9A00E3F33D /* SCHEDULER-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCHEDULER-Prefix.pch"; sourceTree = "<group>"; };
+		227D828615594C9A00E3F33D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		227D828715594C9A00E3F33D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		227D828A15594C9A00E3F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		227D828D15594C9A00E3F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		227D828F15594C9A00E3F33D /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		227D828F15594C9A00E3F33D /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		227D829015594C9A00E3F33D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		227D829215594C9A00E3F33D /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		227D829215594C9A00E3F33D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		227D829315594C9A00E3F33D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		227D829A15594C9A00E3F33D /* SCHEDULERTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCHEDULERTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		227D829B15594C9A00E3F33D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		227D82A315594C9A00E3F33D /* SCHEDULERTests-Info.plist */ = {isa = PBXFileReference; path = "SCHEDULERTests-Info.plist"; sourceTree = "<group>"; };
+		227D82A315594C9A00E3F33D /* SCHEDULERTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCHEDULERTests-Info.plist"; sourceTree = "<group>"; };
 		227D82A515594C9A00E3F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		227D82A715594C9A00E3F33D /* SCHEDULERTests.h */ = {isa = PBXFileReference; path = SCHEDULERTests.h; sourceTree = "<group>"; };
+		227D82A715594C9A00E3F33D /* SCHEDULERTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHEDULERTests.h; sourceTree = "<group>"; };
 		227D82A815594C9A00E3F33D /* SCHEDULERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHEDULERTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
