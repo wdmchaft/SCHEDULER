@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MondayFirstPeriod : UIViewController
-
+@interface MondayFirstPeriod : UIViewController <UITextViewDelegate>
+@property (retain, nonatomic) IBOutlet UITextView *textviewContent;
 @end

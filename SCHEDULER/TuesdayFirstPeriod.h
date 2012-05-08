@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TuesdayFirstPeriod : UIViewController
-
+@interface TuesdayFirstPeriod : UIViewController <UITextViewDelegate>
+{
+    
+}
 @end

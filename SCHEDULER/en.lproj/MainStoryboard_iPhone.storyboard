@@ -135,7 +135,7 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="35"/>
+                    <navigationItem key="navigationItem" title="管理手帳" id="35"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="455" y="64"/>
@@ -233,9 +233,25 @@
                     <view key="view" contentMode="scaleToFill" id="b4z-cC-ums">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6vz-zn-MBx">
+                                <rect key="frame" x="60" y="105" width="200" height="280"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="e8g-ud-LnA" id="7MO-Rb-eEd"/>
+                                </connections>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="1限目" id="REU-Z8-gLX"/>
+                    <connections>
+                        <outlet property="textviewContent" destination="6vz-zn-MBx" id="UVN-59-CSK"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1478" y="-811"/>
@@ -429,6 +445,9 @@
         </class>
         <class className="MondayFirstPeriod" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MondayFirstPeriod.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textviewContent" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="MondaySecondPeriod" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MondaySecondPeriod.h"/>

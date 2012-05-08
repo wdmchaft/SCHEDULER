@@ -10,6 +10,7 @@
 
 @implementation TuesdayFirstPeriod
 
+/*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -17,6 +18,11 @@
         // Custom initialization
     }
     return self;
+}
+*/
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,13 +42,12 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
-*/
 
 - (void)viewDidUnload
 {
@@ -56,5 +61,6 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
 
 @end

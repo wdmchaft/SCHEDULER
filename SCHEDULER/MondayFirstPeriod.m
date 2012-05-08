@@ -9,7 +9,9 @@
 #import "MondayFirstPeriod.h"
 
 @implementation MondayFirstPeriod
+@synthesize textviewContent = _textviewContent;
 
+/*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -17,6 +19,11 @@
         // Custom initialization
     }
     return self;
+}
+*/
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +53,8 @@
 
 - (void)viewDidUnload
 {
+    [self setTextviewContent:nil];
+    [self setTextviewContent:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -55,6 +64,16 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)dealloc {
+    [_textviewContent release];
+    [super dealloc];
+}
+
+#pragma mark - TextView Delegate Method
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    NSLog(@"テキストビューの編集が始まりました");
 }
 
 @end
