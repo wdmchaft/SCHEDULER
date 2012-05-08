@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225A10F015596ECE0004CB54 /* TuesdayTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A10EF15596ECE0004CB54 /* TuesdayTableView.m */; };
+		225A10F3155970010004CB54 /* MondayFirstPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A10F2155970010004CB54 /* MondayFirstPeriod.m */; };
+		225A10F61559720B0004CB54 /* TuesdayFirstPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A10F51559720B0004CB54 /* TuesdayFirstPeriod.m */; };
+		225A10F9155972EB0004CB54 /* MondaySecondPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A10F8155972EB0004CB54 /* MondaySecondPeriod.m */; };
 		227D827815594C9A00E3F33D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227D827715594C9A00E3F33D /* UIKit.framework */; };
 		227D827A15594C9A00E3F33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227D827915594C9A00E3F33D /* Foundation.framework */; };
 		227D827C15594C9A00E3F33D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227D827B15594C9A00E3F33D /* CoreGraphics.framework */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225A10EE15596ECE0004CB54 /* TuesdayTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuesdayTableView.h; sourceTree = "<group>"; };
+		225A10EF15596ECE0004CB54 /* TuesdayTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuesdayTableView.m; sourceTree = "<group>"; };
+		225A10F1155970010004CB54 /* MondayFirstPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MondayFirstPeriod.h; sourceTree = "<group>"; };
+		225A10F2155970010004CB54 /* MondayFirstPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MondayFirstPeriod.m; sourceTree = "<group>"; };
+		225A10F41559720B0004CB54 /* TuesdayFirstPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuesdayFirstPeriod.h; sourceTree = "<group>"; };
+		225A10F51559720B0004CB54 /* TuesdayFirstPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuesdayFirstPeriod.m; sourceTree = "<group>"; };
+		225A10F7155972EB0004CB54 /* MondaySecondPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MondaySecondPeriod.h; sourceTree = "<group>"; };
+		225A10F8155972EB0004CB54 /* MondaySecondPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MondaySecondPeriod.m; sourceTree = "<group>"; };
 		227D827315594C9A00E3F33D /* SCHEDULER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCHEDULER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227D827715594C9A00E3F33D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		227D827915594C9A00E3F33D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +95,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225A10EB15596E380004CB54 /* Monday */ = {
+			isa = PBXGroup;
+			children = (
+				227D829215594C9A00E3F33D /* DetailViewController.h */,
+				227D829315594C9A00E3F33D /* DetailViewController.m */,
+				225A10F1155970010004CB54 /* MondayFirstPeriod.h */,
+				225A10F2155970010004CB54 /* MondayFirstPeriod.m */,
+				225A10F7155972EB0004CB54 /* MondaySecondPeriod.h */,
+				225A10F8155972EB0004CB54 /* MondaySecondPeriod.m */,
+			);
+			name = Monday;
+			sourceTree = "<group>";
+		};
+		225A10ED15596E780004CB54 /* Tuesday */ = {
+			isa = PBXGroup;
+			children = (
+				225A10EE15596ECE0004CB54 /* TuesdayTableView.h */,
+				225A10EF15596ECE0004CB54 /* TuesdayTableView.m */,
+				225A10F41559720B0004CB54 /* TuesdayFirstPeriod.h */,
+				225A10F51559720B0004CB54 /* TuesdayFirstPeriod.m */,
+			);
+			name = Tuesday;
+			sourceTree = "<group>";
+		};
 		227D826815594C9A00E3F33D = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +154,12 @@
 			children = (
 				227D828615594C9A00E3F33D /* AppDelegate.h */,
 				227D828715594C9A00E3F33D /* AppDelegate.m */,
-				227D828915594C9A00E3F33D /* MainStoryboard_iPhone.storyboard */,
-				227D828C15594C9A00E3F33D /* MainStoryboard_iPad.storyboard */,
 				227D828F15594C9A00E3F33D /* MasterViewController.h */,
 				227D829015594C9A00E3F33D /* MasterViewController.m */,
-				227D829215594C9A00E3F33D /* DetailViewController.h */,
-				227D829315594C9A00E3F33D /* DetailViewController.m */,
+				225A10EB15596E380004CB54 /* Monday */,
+				225A10ED15596E780004CB54 /* Tuesday */,
+				227D828915594C9A00E3F33D /* MainStoryboard_iPhone.storyboard */,
+				227D828C15594C9A00E3F33D /* MainStoryboard_iPad.storyboard */,
 				227D827E15594C9A00E3F33D /* Supporting Files */,
 			);
 			path = SCHEDULER;
@@ -270,6 +306,10 @@
 				227D828815594C9A00E3F33D /* AppDelegate.m in Sources */,
 				227D829115594C9A00E3F33D /* MasterViewController.m in Sources */,
 				227D829415594C9A00E3F33D /* DetailViewController.m in Sources */,
+				225A10F015596ECE0004CB54 /* TuesdayTableView.m in Sources */,
+				225A10F3155970010004CB54 /* MondayFirstPeriod.m in Sources */,
+				225A10F61559720B0004CB54 /* TuesdayFirstPeriod.m in Sources */,
+				225A10F9155972EB0004CB54 /* MondaySecondPeriod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +487,7 @@
 				227D82AE15594C9A00E3F33D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		227D82AF15594C9A00E3F33D /* Build configuration list for PBXNativeTarget "SCHEDULERTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +496,7 @@
 				227D82B115594C9A00E3F33D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
