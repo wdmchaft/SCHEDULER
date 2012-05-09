@@ -11,7 +11,8 @@
 @interface DetailViewController : UITableViewController <UISplitViewControllerDelegate>
 
 @property (strong, nonatomic) id detailItem;
-
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+- (IBAction)cancel:(id)sender;
+- (IBAction)done:(id)sender;
 
 @end

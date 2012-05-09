@@ -81,19 +81,23 @@
 }
 
 #pragma mark - Table view data source
-
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
     return 1;
 }
+*/
 
+/*
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
     return 5;
 }
+*/
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Tuesday Table Cell";
@@ -105,6 +109,8 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%d限目", [indexPath row]+1];
     return cell;
 }
+*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -146,6 +152,7 @@
 */
 
 #pragma mark - Table view delegate
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

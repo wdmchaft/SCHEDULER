@@ -1,5 +1,5 @@
 //
-//  TuesdayTableView.h
+//  TuesdaySecondPeriod.h
 //  SCHEDULER
 //
 //  Created by 佐々木 on 12/05/09.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TuesdayTableView : UITableViewController
+@interface TuesdaySecondPeriod : UIViewController
 
 @end

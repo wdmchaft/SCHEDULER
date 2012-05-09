@@ -43,13 +43,14 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadTextView];
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -71,9 +72,42 @@
     [super dealloc];
 }
 
-#pragma mark - TextView Delegate Method
+#pragma mark - TextView Delegate 
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     NSLog(@"テキストビューの編集が始まりました");
 }
 
+#pragma mark - TextView Method
+- (IBAction)doneButton:(id)sender {
+    [self saveTextView]; //内容の保存
+    //[_textviewContent resignFirstResponder]; //ファーストレスポンダーを止める
+}
+
+//テキストビューの内容の保存
+- (void)saveTextView {
+    /*** 文字列ファイルを用いてデータを保存する方法 ***/
+    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"mondayTextView.strings"];
+    NSString *contentStrings = [NSString string];
+    contentStrings = _textviewContent.text;
+    //データの保存
+    if (filePath) {
+        NSLog(@"データの保存を行ないます");
+        [contentStrings writeToFile: filePath                 // (NSString *) ファイルパス
+                         atomically: YES                      // (BOOL) 予備ファイルを生成
+                           encoding: NSUnicodeStringEncoding  // (NSStringEncoding) 文字コード
+                              error: NULL];                   // (NSError **) エラー
+    }
+}
+
+//テキストビューの内容のロード
+- (void)loadTextView {
+    /*** 文字列ファイルを用いてデータロードする方法 ***/
+    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"mondayTextView.strings"];
+    NSString *contentStrings = [NSString string];
+    if (filePath) {
+        contentStrings = [NSString stringWithContentsOfFile:filePath encoding:NSUnicodeStringEncoding error:NULL];
+        _textviewContent.text = contentStrings;
+    }
+
+}
 @end

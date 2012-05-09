@@ -19,6 +19,10 @@
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+}
+
 - (void)dealloc
 {
     [_detailItem release];
@@ -129,18 +133,24 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
-{
+{   
+    
     static NSString *CellIdentifier = @"Monday Table Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%d限目", [indexPath row]+1];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%d限目", [indexPath row]+1];
     return cell;
+}
+- (IBAction)cancel:(id)sender {
+}
+
+- (IBAction)done:(id)sender {
 }
 @end

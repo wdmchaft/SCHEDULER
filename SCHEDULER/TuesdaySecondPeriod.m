@@ -1,15 +1,14 @@
 //
-//  MondaySecondPeriod.m
+//  TuesdaySecondPeriod.m
 //  SCHEDULER
 //
 //  Created by 佐々木 on 12/05/09.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "MondaySecondPeriod.h"
+#import "TuesdaySecondPeriod.h"
 
-@implementation MondaySecondPeriod
-@synthesize mondayTextView = _mondayTextView;
+@implementation TuesdaySecondPeriod
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,7 +46,6 @@
 
 - (void)viewDidUnload
 {
-    [self setMondayTextView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -57,21 +55,6 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (void)dealloc {
-    [_mondayTextView release];
-    [super dealloc];
-}
-
-#pragma mark - TextView Delegate
-
-- (void)textViewDidBeginEditing:(UITextView *)textView {
-    NSLog(@"テキストビューの編集が始まりました");
-}
-
-- (void)textViewDidEndEditing:(UITextView *)textView {
-    NSLog(@"テキストビューの編集が終わりました");
 }
 
 @end

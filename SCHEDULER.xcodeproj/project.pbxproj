@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220F497C155A823D00459F7C /* TuesdaySecondPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F497B155A823D00459F7C /* TuesdaySecondPeriod.m */; };
 		225A10F015596ECE0004CB54 /* TuesdayTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A10EF15596ECE0004CB54 /* TuesdayTableView.m */; };
 		225A10F3155970010004CB54 /* MondayFirstPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A10F2155970010004CB54 /* MondayFirstPeriod.m */; };
 		225A10F61559720B0004CB54 /* TuesdayFirstPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A10F51559720B0004CB54 /* TuesdayFirstPeriod.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220F497A155A823D00459F7C /* TuesdaySecondPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuesdaySecondPeriod.h; sourceTree = "<group>"; };
+		220F497B155A823D00459F7C /* TuesdaySecondPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuesdaySecondPeriod.m; sourceTree = "<group>"; };
 		225A10EE15596ECE0004CB54 /* TuesdayTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuesdayTableView.h; sourceTree = "<group>"; };
 		225A10EF15596ECE0004CB54 /* TuesdayTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuesdayTableView.m; sourceTree = "<group>"; };
 		225A10F1155970010004CB54 /* MondayFirstPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MondayFirstPeriod.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				225A10EF15596ECE0004CB54 /* TuesdayTableView.m */,
 				225A10F41559720B0004CB54 /* TuesdayFirstPeriod.h */,
 				225A10F51559720B0004CB54 /* TuesdayFirstPeriod.m */,
+				220F497A155A823D00459F7C /* TuesdaySecondPeriod.h */,
+				220F497B155A823D00459F7C /* TuesdaySecondPeriod.m */,
 			);
 			name = Tuesday;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				225A10F3155970010004CB54 /* MondayFirstPeriod.m in Sources */,
 				225A10F61559720B0004CB54 /* TuesdayFirstPeriod.m in Sources */,
 				225A10F9155972EB0004CB54 /* MondaySecondPeriod.m in Sources */,
+				220F497C155A823D00459F7C /* TuesdaySecondPeriod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
