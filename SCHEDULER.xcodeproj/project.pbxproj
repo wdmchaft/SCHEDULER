@@ -27,6 +27,7 @@
 		227D829E15594C9A00E3F33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227D827915594C9A00E3F33D /* Foundation.framework */; };
 		227D82A615594C9A00E3F33D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 227D82A415594C9A00E3F33D /* InfoPlist.strings */; };
 		227D82A915594C9A00E3F33D /* SCHEDULERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227D82A815594C9A00E3F33D /* SCHEDULERTests.m */; };
+		22ECAA8E155B4874001D2B3D /* MondayFirstClassFirstPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECAA8D155B4874001D2B3D /* MondayFirstClassFirstPeriod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		227D82A515594C9A00E3F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		227D82A715594C9A00E3F33D /* SCHEDULERTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHEDULERTests.h; sourceTree = "<group>"; };
 		227D82A815594C9A00E3F33D /* SCHEDULERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHEDULERTests.m; sourceTree = "<group>"; };
+		22ECAA8C155B4874001D2B3D /* MondayFirstClassFirstPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MondayFirstClassFirstPeriod.h; sourceTree = "<group>"; };
+		22ECAA8D155B4874001D2B3D /* MondayFirstClassFirstPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MondayFirstClassFirstPeriod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,10 @@
 		225A10EB15596E380004CB54 /* Monday */ = {
 			isa = PBXGroup;
 			children = (
+				22ECAA8A155B4816001D2B3D /* MondayFirstPeriod */,
 				227D829215594C9A00E3F33D /* DetailViewController.h */,
 				227D829315594C9A00E3F33D /* DetailViewController.m */,
-				225A10F1155970010004CB54 /* MondayFirstPeriod.h */,
-				225A10F2155970010004CB54 /* MondayFirstPeriod.m */,
+				225A10ED15596E780004CB54 /* Tuesday */,
 				225A10F7155972EB0004CB54 /* MondaySecondPeriod.h */,
 				225A10F8155972EB0004CB54 /* MondaySecondPeriod.m */,
 			);
@@ -162,7 +165,6 @@
 				227D828F15594C9A00E3F33D /* MasterViewController.h */,
 				227D829015594C9A00E3F33D /* MasterViewController.m */,
 				225A10EB15596E380004CB54 /* Monday */,
-				225A10ED15596E780004CB54 /* Tuesday */,
 				227D828915594C9A00E3F33D /* MainStoryboard_iPhone.storyboard */,
 				227D828C15594C9A00E3F33D /* MainStoryboard_iPad.storyboard */,
 				227D827E15594C9A00E3F33D /* Supporting Files */,
@@ -198,6 +200,17 @@
 				227D82A415594C9A00E3F33D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22ECAA8A155B4816001D2B3D /* MondayFirstPeriod */ = {
+			isa = PBXGroup;
+			children = (
+				225A10F1155970010004CB54 /* MondayFirstPeriod.h */,
+				225A10F2155970010004CB54 /* MondayFirstPeriod.m */,
+				22ECAA8C155B4874001D2B3D /* MondayFirstClassFirstPeriod.h */,
+				22ECAA8D155B4874001D2B3D /* MondayFirstClassFirstPeriod.m */,
+			);
+			name = MondayFirstPeriod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +329,7 @@
 				225A10F61559720B0004CB54 /* TuesdayFirstPeriod.m in Sources */,
 				225A10F9155972EB0004CB54 /* MondaySecondPeriod.m in Sources */,
 				220F497C155A823D00459F7C /* TuesdaySecondPeriod.m in Sources */,
+				22ECAA8E155B4874001D2B3D /* MondayFirstClassFirstPeriod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

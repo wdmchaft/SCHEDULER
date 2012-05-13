@@ -135,7 +135,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 2;
 }
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {   
     
@@ -148,8 +148,11 @@
     //cell.textLabel.text = [NSString stringWithFormat:@"%d限目", [indexPath row]+1];
     return cell;
 }
+*/
 - (IBAction)cancel:(id)sender {
 }
+
+                
 
 - (IBAction)done:(id)sender {
 }

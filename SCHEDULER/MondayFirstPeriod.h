@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MondayFirstPeriod : UIViewController <UITextViewDelegate>
+@interface MondayFirstPeriod : UIViewController <UIScrollViewDelegate>
 
-@property (retain, nonatomic) IBOutlet UITextView *textviewContent;
-
-- (IBAction)doneButton:(id)sender;
-- (void)saveTextView;
-- (void)loadTextView;
+@property (retain, nonatomic) IBOutlet UIScrollView *scroller;
+@property (retain, nonatomic) IBOutlet UIButton *firstClassButton;
 
 @end

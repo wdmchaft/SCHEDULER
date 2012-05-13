@@ -10,5 +10,10 @@
 
 @interface MondaySecondPeriod : UIViewController <UITextViewDelegate>
 
+@property (retain, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 @property (retain, nonatomic) IBOutlet UITextView *mondayTextView;
+
+- (IBAction)doneButton:(id)sender;
+- (void)saveTextView;
+- (void)loadTextView;
 @end

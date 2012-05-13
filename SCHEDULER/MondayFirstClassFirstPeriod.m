@@ -1,17 +1,14 @@
 //
-//  MondayFirstPeriod.m
+//  MondayFirstClassFirstPeriod.m
 //  SCHEDULER
 //
-//  Created by 佐々木 on 12/05/09.
+//  Created by 佐々木 on 12/05/10.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "MondayFirstPeriod.h"
+#import "MondayFirstClassFirstPeriod.h"
 
-@implementation MondayFirstPeriod
-@synthesize scroller = _scroller;
-@synthesize firstClassButton = _firstClassButton;
-
+@implementation MondayFirstClassFirstPeriod
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,12 +18,6 @@
     }
     return self;
 }
-
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -45,20 +36,16 @@
 }
 */
 
-
+/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //_scroller.delegate = self;
-    self.scroller.contentSize = CGSizeMake(320, 1200);
 }
-
+*/
 
 - (void)viewDidUnload
-{   
-    [self setFirstClassButton:nil];
-    [self setScroller:nil];
+{
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -70,9 +57,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [super dealloc];
-    [_firstClassButton release];
-    [_scroller release];
-}
 @end
